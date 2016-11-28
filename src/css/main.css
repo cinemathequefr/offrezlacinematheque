@@ -4,11 +4,10 @@ html {
 
 body {
   font-size: 1rem; font-family: Source Sans Pro;
-  /*background-color: #006600;*/
+  /*background-image: url(bg.svg);*/
 }
 
 .row {
-  background-color: #fff;
 }
 
 h1, h2, h3 {
@@ -17,15 +16,27 @@ h1, h2, h3 {
 }
 
 h1 {
+  position: absolute; top: 35vh; left: 20%;
   font-family: Quicksand;
-  font-size: 1.75rem;
+  font-size: 4rem; line-height: 3.5rem;
   text-transform: uppercase;
+  text-align: left;
+  color: #150; /*text-shadow: 2px 2px 2px rgba(0, 0, 0, .75);*/
+  transform: skewY(-3.125deg);
 }
 
+h1 > .pre {
+  font-size: 3.5rem;
+  color: #d00;
+}
+
+
+
 h2 {
-  font-family: Source Sans Pro; font-weight: 700;
+  font-family: Quicksand; font-weight: 700;
   text-transform: uppercase;
   font-size: 1.75rem;
+  color: #fff; text-shadow: 2px 2px 2px #000;
 }
 
 
@@ -35,10 +46,39 @@ h3 {
   font-size: 2rem; line-height: 2rem;
 }
 
-#abonnements h3 {
+
+section#title {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image: url(splash.jpg); /*background-size: 100% auto;*/ background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#title1 {
+  margin: 5vh auto 0 auto; width: 75%; height: 25vh;
+  /*width: 30%;*/
+  /*height: 20vh;*/
+}
+
+
+#title1 path {
+  fill: #d00;
+  -webkit-filter: drop-shadow(-2px 2px 4px #633); filter: drop-shadow(-2px 2px 4px #633);
+}
+
+section#abonnements {
+  position: relative; margin-top: 60vh;
+}
+
+section#abonnements h3 {
   color: rgba(255, 255, 255, .75);
   text-align: center;
 }
+
+section#libriaire {
+  position: relative;
+}
+
 
 #librairie h3 {
   margin-bottom: 12px;
@@ -69,7 +109,7 @@ h3 {
 .r11 {
   position: relative; display: block;
   width: 100%;
-  padding-bottom: 100%; margin: 0px; outline: none;
+  padding-bottom: 100%; margin: 18px 0 0 0; outline: none;
   background-color: #69f; background-position: 50% 50%; background-repeat: no-repeat; background-size: 100%;
   cursor: pointer;
   transition: 0.15s;
