@@ -4,33 +4,49 @@ html {
 
 body {
   font-size: 1rem; font-family: Source Sans Pro;
-  /*background-image: url(bg.svg);*/
+  background-repeat: no-repeat; background-position: 50% 50%;
+  background-color: #900;
 }
 
-.row {
+/*
+@media (max-width: 1023px) {
+  body {
+    background-color: #900;
+  }
 }
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(splash2.jpg); background-size: cover; background-attachment: fixed;
+  }
+}
+*/
+
+
+ul {
+  list-style-type: none; margin-left: 0;
+}
+
+a:link, a:hover, a:active, a:visited { color: inherit; text-decoration: underline; }
 
 h1, h2, h3 {
   margin: 0; padding: 0;
-
 }
+
 
 h1 {
-  position: absolute; top: 35vh; left: 20%;
-  font-family: Quicksand;
-  font-size: 4rem; line-height: 3.5rem;
-  text-transform: uppercase;
-  text-align: left;
-  color: #150; /*text-shadow: 2px 2px 2px rgba(0, 0, 0, .75);*/
-  transform: skewY(-3.125deg);
+  display: block;
+  padding: 10rem 0 10rem 0;
+  font-family: Quicksand; font-weight: 700; font-size: 4.5rem;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  line-height: 4.5rem;
+  color: #fff;
+  text-align: center;
 }
 
-h1 > .pre {
-  font-size: 3.5rem;
-  color: #d00;
+h1 > .small {
+  font-size: 3rem;
 }
-
-
 
 h2 {
   font-family: Quicksand; font-weight: 700;
@@ -41,37 +57,25 @@ h2 {
 
 
 h3 {
-  font-family: Source Sans Pro; font-weight: 400;
+  margin-bottom: 18px;
+  font-family: Source Sans Pro; font-weight: 600;
   text-transform: uppercase;
   font-size: 2rem; line-height: 2rem;
 }
 
 
 section#title {
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background-image: url(splash.jpg); /*background-size: 100% auto;*/ background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#title1 {
-  margin: 5vh auto 0 auto; width: 75%; height: 25vh;
-  /*width: 30%;*/
-  /*height: 20vh;*/
-}
-
-
-#title1 path {
-  fill: #d00;
-  -webkit-filter: drop-shadow(-2px 2px 4px #633); filter: drop-shadow(-2px 2px 4px #633);
+  color: #fff; font-family: Quicksand, Source Sans Pro; font-weight: 700; text-transform: uppercase; padding-top: 2vh;
 }
 
 section#abonnements {
-  position: relative; margin-top: 60vh;
+  position: relative; margin-top: 0vh;
 }
 
 section#abonnements h3 {
-  color: rgba(255, 255, 255, .75);
+  position: absolute; width: 100%;
+  text-shadow: 1px 1px 1px #333;
+  color: #fff;
   text-align: center;
 }
 
@@ -81,7 +85,6 @@ section#libriaire {
 
 
 #librairie h3 {
-  margin-bottom: 12px;
   color: #111;
   font-size: 1.5rem; font-weight: 700;
   line-height: 1.375rem;
@@ -91,19 +94,31 @@ section#libriaire {
   font-size: 1.188rem;
 }
 
+.row {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.row.trans {
+  background-color: transparent;
+}
 
 .column {
   padding: 15px;
 }
-
-
-
 
 .r169 {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; margin: 0px;
   background-color: #369;
+  background-image: url(card1.jpg); background-position: 50% 50%; background-size: 100%;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.r169:hover, .r169:active {
+  background-size: 150%;
 }
 
 .r11 {
@@ -119,13 +134,11 @@ section#libriaire {
   background-size: 125%;
 }
 
-
 .r169 > div, .r11 > div {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   padding: 12px;
 }
-
 
 .desc {
   font-size: 0.938rem;
@@ -136,24 +149,36 @@ section#libriaire {
   display: block;
   margin: 0 auto 12px auto;
   width: 120px;
-  background-color: #990000;
+  background-color: #900;
   font-family: Quicksand; font-weight: 600;
   text-transform: uppercase;
   transition: 0.15s;
 }
 
-.button:hover, .r11:hover .button {
-  background-color: #cc0000;
+.button:hover, .r169:hover .button, .r11:hover .button {
+  background-color: #c00;
+}
+
+.r169 .button {
+  border: solid 2px #fff;
+  margin-top: 37.5%;
+  transform: skewY(-9deg);
 }
 
 .r11 .button {
   border: solid 2px #fff;
-
   margin-top: 45%;
   transform: skewY(-9deg);
-  /*box-shadow: 2px 2px 5px rgba(0, 0, 0, .75);*/
 }
+
+.prix {
+  /*background-color: #900; background-color: #c33; color: #fff; font-weight: 600; padding: 0px 2px;*/
+  color: #c33; border: solid 1px #c33; padding: 0 1px;
+}
+
+
 
 footer {
   margin: 48px 0;
+  font-size: 0.938rem;
 }
