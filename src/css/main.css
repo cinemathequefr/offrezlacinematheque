@@ -3,25 +3,144 @@ html {
 }
 
 body {
+  background-color: #900;
+  font-size: 1rem;
+  font-family: Source Sans Pro;
+  padding-bottom: 72px;
+}
+
+ul {
+  list-style-type: none; margin-left: 0;
+}
+
+a:link, a:hover, a:active, a:visited { color: inherit; text-decoration: underline; }
+
+h1 {
+  padding: 10rem 0;
+  color: #fff;
+  font-size: 1rem; font-family: Quicksand; font-weight: 700; font-size: 4.5rem; line-height: 4.5rem;
+  text-transform: uppercase; text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5); text-align: center;
+}
+
+h1 > .small { font-size: 3rem; }
+
+h2 {
+  font-family: Source Sans Pro; font-weight: 700;
+  text-transform: uppercase;
+}
+
+.abonnements h2 {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  font-size: 2rem; line-height: 2rem;
+  text-shadow: 1px 1px 1px #333; text-align: center;
+}
+
+.librairie h2 {
+  padding: 12px 0;
+  color: #111;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
+}
+
+.librairie h2 > .small {
+  font-size: 1.188rem;
+}
+
+.button {
+  display: block;
+  width: 120px;
+  margin: 0 auto 12px auto; border: solid 2px #fff;
+  transform: skewY(-9deg);
+  background-color: #900;
+  font-family: Quicksand; font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.15s;
+}
+
+.row {
+  background-color: #fff;
+}
+
+.row.trans {
+  background-color: transparent;
+}
+
+.column {
+  padding: 15px;
+}
+
+a.r169, a.r11 {
+  position: relative; display: block;
+  width: 100%;
+  background-position: 50% 50%; background-repeat: no-repeat; background-size: 100%;
+}
+
+a.r169 {
+  padding-bottom: 56.25%; margin: 0px;
+  transition: 0.15s;
+}
+
+a.r169:hover, a.r169:active {
+  background-size: 150%;
+}
+
+a.r11 {
+  padding-bottom: 100%; margin: 18px 0 0 0;
+  transition: 0.15s;
+}
+
+a.r11:hover, a.r11:active {
+  background-size: 125%;
+}
+
+a.r169 > div, a.r11 > div {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  padding: 12px;
+}
+
+a.r169 .button {
+  margin-top: 37.5%;
+}
+
+a.r11 .button {
+  margin-top: 85%;
+}
+
+a.r11:hover .button, a.r169:hover .button {
+  background-color: #c00;
+}
+
+.desc {
+  font-size: 0.938rem;
+  padding: 12px 12px;
+}
+
+.prix {
+  border: solid 1px #c33; padding: 0 1px;
+  color: #c33; 
+}
+
+
+footer {
+  padding-top: 36px;
+  font-size: 0.938rem;
+  color: #333;
+}
+
+
+/*
+html {
+  font-size: 100%;
+}
+
+body {
   font-size: 1rem; font-family: Source Sans Pro;
   background-repeat: no-repeat; background-position: 50% 50%;
   background-color: #900;
 }
-
-/*
-@media (max-width: 1023px) {
-  body {
-    background-color: #900;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    background-image: url(splash2.jpg); background-size: cover; background-attachment: fixed;
-  }
-}
-*/
-
 
 ul {
   list-style-type: none; margin-left: 0;
@@ -108,7 +227,7 @@ section#libriaire {
 }
 
 .r169 {
-  position: relative;
+  position: relative; display: block;
   width: 100%;
   padding-bottom: 56.25%; margin: 0px;
   background-color: #369;
@@ -167,12 +286,11 @@ section#libriaire {
 
 .r11 .button {
   border: solid 2px #fff;
-  margin-top: 45%;
+  margin-top: 85%;
   transform: skewY(-9deg);
 }
 
 .prix {
-  /*background-color: #900; background-color: #c33; color: #fff; font-weight: 600; padding: 0px 2px;*/
   color: #c33; border: solid 1px #c33; padding: 0 1px;
 }
 
@@ -182,3 +300,4 @@ footer {
   margin: 48px 0;
   font-size: 0.938rem;
 }
+*/
