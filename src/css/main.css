@@ -16,7 +16,7 @@ ul {
 a:link, a:hover, a:active, a:visited { color: inherit; text-decoration: underline; }
 
 h1 {
-  padding: 10rem 0;
+  padding: 10rem 0 8rem 0;
   color: #fff;
   font-size: 1rem; font-family: Quicksand; font-weight: 700; font-size: 4.5rem; line-height: 4.5rem;
   text-transform: uppercase; text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5); text-align: center;
@@ -71,6 +71,13 @@ h2 {
 
 .row.trans {
   background-color: transparent;
+}
+
+.chapeau {
+  margin: 0 15px 24px 15px;
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: center;
 }
 
 .column {
