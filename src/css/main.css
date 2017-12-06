@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background-color: #900;
+  /*background-color: #900;*/
+  background-color: #369;
   font-size: 1rem;
   font-family: Source Sans Pro;
   padding-bottom: 72px;
@@ -24,6 +25,22 @@ h1 {
 
 h1 > .small { font-size: 3rem; }
 
+a.logocf {
+  display: block; position: absolute;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE0NSIgaGVpZ2h0PSIxMDAwIiB2aWV3Qm94PSIwIDAgMTQ1IDEwMDAiPjxwb2x5Z29uIGZpbGw9IiNmZmYiIHBvaW50cz0iLTAuMTIgNTYuMzQgLTAuMTIgMTguODEgMTguNDkgMCAxMTIuNCAwIDEzMS4yIDE4LjgxIDEzMS4yIDU2LjM0IDExMi4zOSA3NS4xNiA4NC4yMSA3NS4xNiA4NC4yMSA0Ni45OCAxMDMuMDMgNDYuOTggMTAzLjAzIDI4LjE3IDI3Ljg2IDI4LjE3IDI3Ljg2IDQ2Ljk4IDQ2LjY4IDQ2Ljk4IDQ2LjY4IDc1LjE2IDE4LjUgNzUuMTYgIi8+PHJlY3QgZmlsbD0iI2ZmZiIgeD0iMTMuMDUiIHk9IjkwLjIiIHdpZHRoPSIxMzEuNiIgaGVpZ2h0PSIyOC4xNyIvPjxwb2x5Z29uIGZpbGw9IiNmZmYiIHBvaW50cz0iLTAuMTcgMTgwLjQxIDUyLjI0IDE2MS42IC0wLjE3IDE2MS42IC0wLjE3IDEzMy40MyAxMzEuMjQgMTMzLjQzIDEzMS4yNCAxNjEuNiA3OC41NyAxODAuNDEgMTMxLjI0IDE4MC40MSAxMzEuMjQgMjA4LjU5IC0wLjE3IDIwOC41OSAiLz48cG9seWdvbiBmaWxsPSIjZmZmIiBwb2ludHM9IjAuMTEgMjIzLjY0IDEzMS40NCAyMjMuNjQgMTMxLjQ0IDI4OS40MyAxMDMuMjcgMjg5LjQzIDEwMy4yNyAyNTEuODEgNzkuNzcgMjUxLjgxIDc5Ljc3IDI4OS40MyA1MS42IDI4OS40MyA1MS42IDI1MS44MSAyOC4xIDI1MS44MSAyOC4xIDI4OS40MyAwLjExIDI4OS40MyAiLz48cG9seWdvbiBmaWxsPSIjZmZmIiBwb2ludHM9IjAuMTEgMzcwLjI4IDQ2LjkyIDM3MC4yOCAwLjExIDM1MS40NyA0Ni45MiAzMzIuNjUgMC4xMSAzMzIuNjUgMC4xMSAzMDQuNDggMTMxLjQ0IDMwNC40OCAxMzEuNDQgMzMyLjY1IDg0LjQ1IDM1MS40NyAxMzEuNDQgMzcwLjI4IDEzMS40NCAzOTguNDUgMC4xMSAzOTguNDUgIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEzLjU5IDQ2NS4yMUwzMi40IDQ2MnYtMjMuNjhsLTE4LjgxLTMuMjF2LTI3Ljk5bDEzMS41OSAyNC4zMnYzNy41NGwtMTMxLjU5IDI0LjQxdi0yOC4xN2wwIDBWNDY1LjIxek0xMDEuNCA0NTAuMTZsLTQwLjgzLTYuODh2MTMuODZMMTAxLjQgNDUwLjE2IDEwMS40IDQ1MC4xNnoiLz48cG9seWdvbiBmaWxsPSIjZmZmIiBwb2ludHM9IjEwMy4yNyA1NDUuMSAwLjExIDU0NS4xIDAuMTEgNTE2LjkyIDEwMy4yNyA1MTYuOTIgMTAzLjI3IDQ4OC42NiAxMzEuNDQgNDg4LjY2IDEzMS40NCA1NzMuMjcgMTAzLjI3IDU3My4yNyAiLz48cG9seWdvbiBmaWxsPSIjZmZmIiBwb2ludHM9IjAuMTEgNjI5LjcxIDUxLjYgNjI5LjcxIDUxLjYgNjEwLjkgMC4xMSA2MTAuOSAwLjExIDU4Mi43MiAxMzEuNDQgNTgyLjcyIDEzMS40NCA2MTAuOSA3OS43NyA2MTAuOSA3OS43NyA2MjkuNzEgMTMxLjQ0IDYyOS43MSAxMzEuNDQgNjU3Ljg5IDAuMTEgNjU3Ljg5ICIvPjxwb2x5Z29uIGZpbGw9IiNmZmYiIHBvaW50cz0iMC4xMSA2NzIuOTMgMTMxLjQ0IDY3Mi45MyAxMzEuNDQgNzM4Ljc0IDEwMy4yNyA3MzguNzQgMTAzLjI3IDcwMS4xIDc5Ljc3IDcwMS4xIDc5Ljc3IDczOC43NCA1MS42IDczOC43NCA1MS42IDcwMS4xIDI4LjEgNzAxLjEgMjguMSA3MzguNzQgMC4xMSA3MzguNzQgIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAuMyA3NzIuNTlsMTguNjItMTguODFoOTMuOTFsMTguOCAxOC44MXYzNy41M2wtMTguOCAxOC44MWgtODQuNTRsLTkuMzUtOS4zNnYxNi44OUgwLjN2LTYzLjg4bDAgMCAwIDBWNzcyLjU5ek0xMDMuNDUgODAwLjc2di0xOC44MUgyOC4yOHYxOC44MUgxMDMuNDV6Ii8+PHBvbHlnb24gZmlsbD0iI2ZmZiIgcG9pbnRzPSIxMy4wNiA5MDAuMzQgMTMuMDYgODYyLjgxIDMxLjg2IDg0My45OSAxNDQuNjUgODQzLjk5IDE0NC42NSA4NzIuMTYgNDEuMjMgODcyLjE2IDQxLjIzIDg5MC45OCAxNDQuNjUgODkwLjk4IDE0NC42NSA5MTkuMTUgMzEuODYgOTE5LjE1ICIvPjxwb2x5Z29uIGZpbGw9IiNmZmYiIHBvaW50cz0iMC4xMSA5MzQuMiAxMzEuNDQgOTM0LjIgMTMxLjQ0IDEwMDAgMTAzLjI3IDEwMDAgMTAzLjI3IDk2Mi4zNyA3OS43NyA5NjIuMzcgNzkuNzcgMTAwMCA1MS42IDEwMDAgNTEuNiA5NjIuMzcgMjguMSA5NjIuMzcgMjguMSAxMDAwIDAuMTEgMTAwMCAiLz48L3N2Zz4=") no-repeat;
+  background-size: contain;
+  width: 65.25px; height: 450px;
+  /*width: 36.25px; height: 250px;*/
+  left: -2px; top: 0;
+  transform: rotate(180deg);
+  opacity: 0.85; transition: 0.2s;
+}
+
+a.logocf:hover, a.logocf:active {
+  opacity: 1;
+}
+
+
 @media (max-width: 899px) {
   h1 { font-size: 2rem; line-height: 2rem; }
   h1 > .small { font-size: 1.5rem; }
@@ -36,11 +53,13 @@ h2 {
 }
 
 .abonnements h2 {
-  position: absolute;
+  position: absolute; margin-left:-12px; top: 128px; padding-top: 4px; padding-bottom: 4px; min-height: 120px;
   width: 100%;
   color: #fff;
-  font-size: 2rem; line-height: 2rem;
-  text-shadow: 1px 1px 1px #333; text-align: center;
+  font-size: 1.75rem; line-height: 1.75rem;
+  text-shadow: 2px 1px 1px #063; text-align: center;
+  background-color: #396;
+  opacity: 1;
 }
 
 .librairie h2 {
@@ -50,7 +69,7 @@ h2 {
   line-height: 1.375rem;
 }
 
-.librairie h2 > .small {
+h2 > .small {
   font-size: 1.188rem;
 }
 
@@ -59,7 +78,8 @@ h2 {
   width: 120px;
   margin: 0 auto 12px auto; border: solid 2px #fff;
   transform: skewY(-9deg);
-  background-color: #900;
+  /*background-color: #369;*/
+  background-color: #c00;
   font-family: Quicksand; font-weight: 600;
   text-transform: uppercase;
   transition: 0.15s;
@@ -84,6 +104,24 @@ h2 {
   padding: 15px;
 }
 
+
+.inter {
+  padding: 30px 15px;
+}
+
+.inter h1 {
+  padding: 0 0 1rem 0;
+  color: #063;
+  font-size: 2rem; line-height: 2rem;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.inter p {
+  color: #063; font-weight: 600;
+  text-align: center;
+}
+
+
 a.r169, a.r11 {
   position: relative; display: block;
   width: 100%;
@@ -95,6 +133,7 @@ a.r169 {
   transition: 0.15s;
 }
 
+
 a.r169:hover, a.r169:active {
   background-size: 150%;
 }
@@ -103,6 +142,7 @@ a.r11 {
   padding-bottom: 100%; margin: 18px 0 0 0;
   transition: 0.15s;
 }
+
 
 a.r11:hover, a.r11:active {
   background-size: 125%;
@@ -114,6 +154,10 @@ a.r169 > div, a.r11 > div {
   padding: 12px;
 }
 
+a.r169 > div {
+  padding: 8px 0;
+}
+
 a.r169 .button {
   margin-top: 37.5%;
 }
@@ -123,7 +167,7 @@ a.r11 .button {
 }
 
 a.r11:hover .button, a.r169:hover .button {
-  background-color: #c00;
+  background-color: #e00;
 }
 
 .desc {
@@ -132,8 +176,27 @@ a.r11:hover .button, a.r169:hover .button {
 }
 
 .prix {
-  border: solid 1px #c33; padding: 0 1px;
-  color: #c33; 
+  border: solid 2px #c33; padding: 0 1px;
+  font-size: 0.875rem; font-weight: 700;
+  color: #c33;
+  cursor: pointer;
+}
+
+.video-container.ratio43 {
+  position: relative;
+  margin: 12px 0;
+  padding-bottom: 75%;
+  /*padding-top: 25px;*/
+  height: 0;
+  background-color: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
